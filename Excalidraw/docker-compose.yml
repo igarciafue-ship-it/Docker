@@ -1,0 +1,35 @@
+services:
+
+  excalidraw:
+    container_name: excalidraw
+    image: excalidraw/excalidraw:latest
+    ports:
+      - "3030:80"
+    restart: on-failure
+    
+  portainer:
+    image: portainer/portainer-ce:latest
+    restart: always
+    ports:
+      - "9443:9443"
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock
+      - portainer_data:/data
+
+  apache:
+    image: httpd:2.4-alpine
+    container_name: apache
+    ports:
+      - 8083:80
+    volumes:
+      - ./public:/usr/local/apache2/htdocs:ro
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "wget", "-qO-", "http://localhost/ || exit 1"]
+      interval: 10s
+ 
+volumes:
+  portainer_data: 
+
+  
+      
