@@ -1,0 +1,1 @@
+{"StartTimeUtc":"2026-10-16T10:50:47.7029962Z","EndTimeUtc":"2026-10-16T10:50:54.6243267Z","Status":"Completed","Name":"Multimedia liburutegia eskaneatu","Key":"RefreshLibrary","Id":"7738148ffcd07979c7ceb148e06b3aed"}
