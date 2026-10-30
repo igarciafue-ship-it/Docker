@@ -372,3 +372,63 @@ PRAGMA temp_store=2;
 [2026-10-16 10:52:37.962 +00:00] [INF] [25] Emby.Server.Implementations.Session.SessionManager: User "root" stopped playback of '"videoplayback"' at "45178"ms ("Jellyfin Web" "12.2.0")
 [2026-10-16 10:52:38.279 +00:00] [INF] [27] Emby.Server.Implementations.HttpServer.WebSocketManager: WS "172.21.0.1" closed
 [2026-10-16 10:52:39.676 +00:00] [INF] [27] Emby.Server.Implementations.HttpServer.WebSocketManager: WS "172.21.0.1" request
+[2026-10-16 10:58:05.467 +00:00] [INF] [31] Emby.Server.Implementations.Session.SessionWebSocketListener: Lost 1 WebSockets.
+[2026-10-16 11:05:21.129 +00:00] [INF] [37] Emby.Server.Implementations.HttpServer.WebSocketManager: WS "172.21.0.1" closed
+[2026-10-16 11:05:21.146 +00:00] [INF] [30] Emby.Server.Implementations.HttpServer.WebSocketManager: WS "172.21.0.1" closed
+[2026-10-16 11:32:50.195 +00:00] [INF] [49] Emby.Server.Implementations.ScheduledTasks.TaskManager: "Clean Log Directory" Completed after 0 minute(s) and 0 seconds
+[2026-10-16 11:32:50.185 +00:00] [INF] [48] Emby.Server.Implementations.ScheduledTasks.TaskManager: "Clean Transcode Directory" Completed after 0 minute(s) and 0 seconds
+[2026-10-16 11:32:50.230 +00:00] [INF] [50] Emby.Server.Implementations.ScheduledTasks.TaskManager: "Clean Cache Directory" Completed after 0 minute(s) and 0 seconds
+[2026-10-16 11:32:50.230 +00:00] [INF] [46] Emby.Server.Implementations.ScheduledTasks.Tasks.OptimizeDatabaseTask: Skipping database optimization because a library scan is currently running.
+[2026-10-16 11:32:50.231 +00:00] [INF] [46] Emby.Server.Implementations.ScheduledTasks.TaskManager: "Optimize database" Completed after 0 minute(s) and 0 seconds
+[2026-10-16 11:32:50.233 +00:00] [INF] [56] Emby.Server.Implementations.ScheduledTasks.TaskManager: "Download missing subtitles" Completed after 0 minute(s) and 0 seconds
+[2026-10-16 11:32:50.240 +00:00] [INF] [85] Emby.Server.Implementations.IO.LibraryMonitor: Stopping directory watching for path "/media"
+[2026-10-16 11:32:50.268 +00:00] [INF] [85] Emby.Server.Implementations.Library.LibraryManager: Validating media library
+[2026-10-16 11:32:52.213 +00:00] [INF] [44] Emby.Server.Implementations.ScheduledTasks.Tasks.PeopleValidationTask: Skipping people validation because a library scan is currently running.
+[2026-10-16 11:32:52.222 +00:00] [INF] [44] Emby.Server.Implementations.ScheduledTasks.TaskManager: "Refresh People" Completed after 0 minute(s) and 1 seconds
+[2026-10-16 11:32:52.344 +00:00] [INF] [45] Emby.Server.Implementations.ScheduledTasks.TaskManager: "Refresh Channels" Completed after 0 minute(s) and 2 seconds
+[2026-10-16 11:32:52.684 +00:00] [INF] [52] Emby.Server.Implementations.ScheduledTasks.TaskManager: "Download missing lyrics" Completed after 0 minute(s) and 2 seconds
+[2026-10-16 11:32:52.851 +00:00] [INF] [53] Emby.Server.Implementations.ScheduledTasks.TaskManager: "Refresh upcoming and missing episodes (TheMovieDb)" Completed after 0 minute(s) and 2 seconds
+[2026-10-16 11:32:52.928 +00:00] [INF] [54] Emby.Server.Implementations.ScheduledTasks.TaskManager: "Audio Normalization" Completed after 0 minute(s) and 2 seconds
+[2026-10-16 11:32:52.999 +00:00] [INF] [47] Emby.Server.Implementations.ScheduledTasks.TaskManager: "Media Segment Scan" Completed after 0 minute(s) and 2 seconds
+[2026-10-16 11:32:53.170 +00:00] [WRN] [45] MediaBrowser.Controller.Entities.BaseItem: Library folder "/config/data/playlists" is inaccessible or empty, skipping
+[2026-10-16 11:32:53.580 +00:00] [WRN] [85] MediaBrowser.Controller.Entities.BaseItem: Library folder "/config/data/playlists" is inaccessible or empty, skipping
+[2026-10-16 11:32:53.816 +00:00] [INF] [85] Emby.Server.Implementations.Library.LibraryManager: Running 9 post-scan task(s)
+[2026-10-16 11:32:53.816 +00:00] [INF] [85] Emby.Server.Implementations.Library.LibraryManager: Running post-scan task 1/9: "SplashscreenPostScanTask"
+[2026-10-16 11:32:53.852 +00:00] [INF] [85] Emby.Server.Implementations.Library.LibraryManager: Post-scan task "SplashscreenPostScanTask" completed after 0 minute(s) and 0 seconds
+[2026-10-16 11:32:53.853 +00:00] [INF] [85] Emby.Server.Implementations.Library.LibraryManager: Running post-scan task 2/9: "ArtistsPostScanTask"
+[2026-10-16 11:32:53.894 +00:00] [INF] [85] Emby.Server.Implementations.Library.Validators.ArtistsValidator: Refreshed metadata for 0 new artists out of 0 total
+[2026-10-16 11:32:53.895 +00:00] [INF] [47] Emby.Server.Implementations.ScheduledTasks.TaskManager: "Update Plugins" Completed after 0 minute(s) and 3 seconds
+[2026-10-16 11:32:53.896 +00:00] [INF] [85] Emby.Server.Implementations.Library.LibraryManager: Post-scan task "ArtistsPostScanTask" completed after 0 minute(s) and 0 seconds
+[2026-10-16 11:32:53.897 +00:00] [INF] [85] Emby.Server.Implementations.Library.LibraryManager: Running post-scan task 3/9: "CollectionPosterVerifyPostScanTask"
+[2026-10-16 11:32:53.897 +00:00] [INF] [85] Emby.Server.Implementations.Library.LibraryManager: Post-scan task "CollectionPosterVerifyPostScanTask" completed after 0 minute(s) and 0 seconds
+[2026-10-16 11:32:53.897 +00:00] [INF] [85] Emby.Server.Implementations.Library.LibraryManager: Running post-scan task 4/9: "CollectionPostScanTask"
+[2026-10-16 11:32:53.901 +00:00] [INF] [85] Emby.Server.Implementations.Library.LibraryManager: Post-scan task "CollectionPostScanTask" completed after 0 minute(s) and 0 seconds
+[2026-10-16 11:32:53.901 +00:00] [INF] [85] Emby.Server.Implementations.Library.LibraryManager: Running post-scan task 5/9: "GenresPostScanTask"
+[2026-10-16 11:32:53.951 +00:00] [INF] [85] Emby.Server.Implementations.Library.Validators.GenresValidator: Refreshed metadata for 0 new genres out of 0 total
+[2026-10-16 11:32:53.955 +00:00] [INF] [85] Emby.Server.Implementations.Library.LibraryManager: Post-scan task "GenresPostScanTask" completed after 0 minute(s) and 0 seconds
+[2026-10-16 11:32:53.955 +00:00] [INF] [85] Emby.Server.Implementations.Library.LibraryManager: Running post-scan task 6/9: "MusicGenresPostScanTask"
+[2026-10-16 11:32:53.959 +00:00] [INF] [85] Emby.Server.Implementations.Library.Validators.MusicGenresValidator: Refreshed metadata for 0 new music genres out of 0 total
+[2026-10-16 11:32:53.959 +00:00] [INF] [85] Emby.Server.Implementations.Library.LibraryManager: Post-scan task "MusicGenresPostScanTask" completed after 0 minute(s) and 0 seconds
+[2026-10-16 11:32:53.959 +00:00] [INF] [85] Emby.Server.Implementations.Library.LibraryManager: Running post-scan task 7/9: "StudiosPostScanTask"
+[2026-10-16 11:32:53.966 +00:00] [INF] [85] Emby.Server.Implementations.Library.Validators.StudiosValidator: Refreshed metadata for 0 new studios out of 0 total
+[2026-10-16 11:32:53.968 +00:00] [INF] [85] Emby.Server.Implementations.Library.LibraryManager: Post-scan task "StudiosPostScanTask" completed after 0 minute(s) and 0 seconds
+[2026-10-16 11:32:53.968 +00:00] [INF] [85] Emby.Server.Implementations.Library.LibraryManager: Running post-scan task 8/9: "CleanDatabaseScheduledTask"
+[2026-10-16 11:32:53.982 +00:00] [INF] [85] Emby.Server.Implementations.Library.LibraryManager: Post-scan task "CleanDatabaseScheduledTask" completed after 0 minute(s) and 0 seconds
+[2026-10-16 11:32:53.982 +00:00] [INF] [85] Emby.Server.Implementations.Library.LibraryManager: Running post-scan task 9/9: "RefreshDatabaseStatisticsPostScanTask"
+[2026-10-16 11:32:53.986 +00:00] [INF] [85] Jellyfin.Database.Providers.Sqlite.SqliteDatabaseProvider: Analyzing jellyfin.db
+[2026-10-16 11:32:54.009 +00:00] [INF] [85] Emby.Server.Implementations.Library.LibraryManager: Post-scan task "RefreshDatabaseStatisticsPostScanTask" completed after 0 minute(s) and 0 seconds
+[2026-10-16 11:32:54.009 +00:00] [INF] [85] Emby.Server.Implementations.Library.LibraryManager: All post-scan tasks completed after 0 minute(s) and 0 seconds
+[2026-10-16 11:32:54.014 +00:00] [INF] [85] Emby.Server.Implementations.ScheduledTasks.TaskManager: "Scan Media Library" Completed after 0 minute(s) and 3 seconds
+[2026-10-16 11:32:54.020 +00:00] [INF] [54] Emby.Server.Implementations.IO.LibraryMonitor: Watching directory "/media"
+[2026-10-16 11:32:55.553 +00:00] [INF] [54] Jellyfin.LiveTv.Guide.GuideManager: Refreshing guide with 7 days of guide data
+[2026-10-16 11:32:55.580 +00:00] [INF] [54] Emby.Server.Implementations.ScheduledTasks.TaskManager: "Refresh Guide" Completed after 0 minute(s) and 3 seconds
+[2026-10-16 12:32:51.741 +00:00] [INF] [10] Emby.Server.Implementations.ScheduledTasks.TaskManager: "Audio Normalization" Completed after 0 minute(s) and 0 seconds
+[2026-10-16 12:32:51.746 +00:00] [INF] [11] Emby.Server.Implementations.ScheduledTasks.TaskManager: "Refresh upcoming and missing episodes (TheMovieDb)" Completed after 0 minute(s) and 0 seconds
+[2026-10-16 12:32:52.525 +00:00] [INF] [10] Emby.Server.Implementations.ScheduledTasks.TaskManager: "Refresh Channels" Completed after 0 minute(s) and 0 seconds
+[2026-10-16 12:32:52.618 +00:00] [INF] [22] Emby.Server.Implementations.ScheduledTasks.TaskManager: "Download missing lyrics" Completed after 0 minute(s) and 1 seconds
+[2026-10-16 12:32:52.691 +00:00] [INF] [11] Emby.Server.Implementations.ScheduledTasks.TaskManager: "Media Segment Scan" Completed after 0 minute(s) and 0 seconds
+[2026-10-16 12:32:52.831 +00:00] [INF] [28] Emby.Server.Implementations.ScheduledTasks.Tasks.PeopleValidationTask: Removed 0 orphaned people.
+[2026-10-16 12:32:52.877 +00:00] [INF] [28] Emby.Server.Implementations.Library.Validators.PeopleValidator: Refreshed metadata for 0 people out of 0 total, 0 of which had no item yet
+[2026-10-16 12:32:52.921 +00:00] [INF] [28] Emby.Server.Implementations.ScheduledTasks.TaskManager: "Refresh People" Completed after 0 minute(s) and 1 seconds
+[2026-10-16 12:32:55.705 +00:00] [INF] [5] Jellyfin.LiveTv.Guide.GuideManager: Refreshing guide with 7 days of guide data
+[2026-10-16 12:32:55.721 +00:00] [INF] [5] Emby.Server.Implementations.ScheduledTasks.TaskManager: "Refresh Guide" Completed after 0 minute(s) and 3 seconds
