@@ -1,0 +1,78 @@
+
+
+services:
+  db:
+    image: mysql:8.0
+    container_name: db
+    environment:
+      MYSQL_DATABASE: ${DB_NAME}
+      MYSQL_USER: ${DB_USER}
+      MYSQL_PASSWORD: ${DB_PASSWORD}
+      MYSQL_ROOT_PASSWORD: ${DB_ROOT_PASSWORD}
+    volumes:
+      - mysql_data:/var/lib/mysql
+    networks:
+      - examen_network
+    healthcheck:
+      test: ["CMD", "mysqladmin", "ping", "-h", "localhost"]
+      timeout: 5s
+      retries: 10
+
+  wordpress:
+    image: wordpress:latest
+    container_name: wordpress
+    depends_on:
+      db:
+        condition: service_healthy
+    environment:
+      WORDPRESS_DB_HOST: db:3306
+      WORDPRESS_DB_NAME: ${DB_NAME}
+      WORDPRESS_DB_USER: ${DB_USER}
+      WORDPRESS_DB_PASSWORD: ${DB_PASSWORD}
+    ports:
+      - "8103:80"
+    volumes:
+      - wordpress_data:/var/www/html
+    networks:
+      - examen_network
+
+  phpmyadmin:
+    image: phpmyadmin:latest
+    container_name: phpmyadmin
+    depends_on:
+      db:
+        condition: service_healthy
+    environment:
+      PMA_HOST: db
+      PMA_USER: ${DB_USER}
+      PMA_PASSWORD: ${DB_PASSWORD}
+      PMA_DB: ${DB_NAME}
+    ports:
+      - "8203:80"
+    networks:
+      - examen_network
+
+  corrector:
+    build: ./corrector
+    container_name: corrector
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock
+      - .:/examen:ro
+    environment:
+      CARPETA: /examen
+    networks:
+      - examen_network
+    depends_on:
+      - db
+      - wordpress
+      - phpmyadmin
+
+volumes:
+  mysql_data:
+    name: mysql_data
+  wordpress_data:
+    name: wordpress_data
+
+networks:
+  examen_network:
+    driver: bridge
