@@ -44,9 +44,8 @@ services:
         condition: service_healthy
     environment:
       PMA_HOST: db
-      PMA_USER: ${DB_USER}
-      PMA_PASSWORD: ${DB_PASSWORD}
-      PMA_DB: ${DB_NAME}
+      PMA_USER: root
+      PMA_PASSWORD: ${DB_ROOT_PASSWORD}
     ports:
       - "8203:80"
     networks:
